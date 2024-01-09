@@ -1,471 +1,284 @@
 
-<!DOCTYPE html>
-<html lang="en">
-    
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video duration box - Sameer</title>
-    <script src="https://kit.fontawesome.com/029c9820bf.js" crossorigin="anonymous"></script>
-   
+	<title></title>
+	<style>
+h3 {
+  color: Yellow;
+  font-family: new roman;
+  font-size: 90%;
+  float:right;
+  margin-right:120px;
+  margin-top: 26px;
+}
+  h2 {
+  color: Black;
+  font-family: new roman;
+  font-size: 90%;
+  float:left;
+  
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.h2{
+	color: Black;
+  font-family: new roman;
+  font-size: 90%;
+  float:left;
+  
+  margin-left: 60px;
+  margin-top: 10px;
+
+}
+p  {
+  color: Black;
+  font-family: courier;
+  font-size: 80%;
+  margin-left: 5px;
+}
+.img1 {
+ float : left;
+  width: 50px;
+  height: 50px;
+
+  margin-top: 20px;
+  background-size: 100%;
+}
+
+.img2{
+	margin-top: 20px;
+	width: 50px;
+  height: 50px;
+  background-size: 100%;
+  border-radius: 70%;
+}
+
+.img3 {
+ float : left;
+  width: 60px;
+  height: 40px;
+margin-top: 8px;
+  margin-left: 75px;
+  background-size: 100%;
+}
 
 
-  <link rel="stylesheet" href="./CSS/style.css">
+.img4 {
+ float : left;
+  width: 50px;
+  height: 50px;
+margin-top: 10px;
+  margin-left: 20px;
+  background-size: 100%;
+  border-radius: 70%;
+}
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+.img5 {
+ float : left;
+  width: 50px;
+  height: 50px;
+margin-top: 10px;
+  margin-left: 70px;
+  background-size: 100%;
+  border-radius: 90%;
+}
+
+
+
+.img6 {
+ float : left;
+  width: 610px;
+  height: 100px;
+margin-top: 10px;
+  margin-left: 44px;
+  background-size: 100%;
+  
+}
+
+
+div{
+	width:100%;
+	height:50%;
+	float:left;
+	margin-top: 0px;
+	border: 3px;
+	border-color: red;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #002147;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float:left;
+  padding: 6px;
+  border: none;
+  margin-top: 24px;
+  
+  font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+img{
+	margin-top:20px;
+}
 
 
 
 
+/* Create three equal columns that floats next to each other */
+.column1 {
+  float: left;
+  margin-top: 10px;
+  margin-left: 120px;
+  width: 15.33%;
+  padding: 10px;
+  height: 450px; 
+  border: 3px;
+  border-color: black;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column2 {
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 50.46%;
+  padding: 10px;
+  height: 100px; 
+  background-color: white;/* Should be removed. Only for demonstration */
+}
+
+.column3 {
+  float: right;
+  width: 19.20%;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  height: 150px; /* Should be removed. Only for demonstration */
+}
+
+.column4
+{
+	margin-left: 10px;
+	width :700px;
+	margin-top: 10px;
+	height:300px;
+}
+
+
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 </style>
 </head>
 
 <body>
-    <div class="container">
- 
-        <div class="Box-1">
-            <div class="master-img-container">
-            <div class="img-container">
-                <img class="master-img"  src="./Images/img1.jpg" alt="image-1">
-            </div>
-            <div class="bottom-right">
-                16:17
-            </div>
-            </div>
 
-            <div class="logo-container">
-                <img class="logo-img" src="./Images/logo1.jpg" alt="Logo-1">
-            </div>
 
-            <div class="text">
-                <div class="content-heading">
-                    <p>CSS Tutorial: Media Queries Explained <br>| Web Development Tutorials #30</p>
-                </div>
-
-                <div class="page-name">
-                    <p>CodeWithHarry <i class="fa-solid fa-circle-check "></i></p>
-                </div>
-                <div class="video-history">
-                    <p>433K views &#x2022 2 years ago</p>
-                </div>
-            </div>
-
-        </div>
   
-        <div class="Box-1">
-            <div class="master-img-container">
-            <div class="img-container">
-                <img class="master-img"  src="./Images/image2.webp" alt="image-2">
-            </div>
-            <div class="bottom-right">
-                16:20   
-            </div>
-            </div>
+  <div class="topnav" >
+  <img class="img1" style="margin-left: 120px"src="pic1.jpg" alt="linkdine"> &nbsp
+  <input  style="margin-left:30px"type="text" placeholder="Search.."> 
 
-            <div class="logo-container">
-                <img class="logo-img" src="./Images/logo2.jpg" alt="Logo-2">
-            </div>
+  <a href="index.html"><img class="img1"style=" margin-left:120px;margin-top:8px"src="home.jpg" alt="Home"></a>
+	<a href="index.html"><img class="img1" style=" margin-top:8px;"src="con1.jpg" alt="Network"> </a>
+    <a href="index.html"><img class="img1" style=" margin-top:8px"src="con1.jpg" alt="Network"> </a>
+    <a href="index.html"><img class="img1" style=" margin-top:8px"src="job.jpg" alt="Job"> </a>
+    <a href="index.html"><img class="img1" style=" margin-top:8px"src="bell.jpg" alt="Message"> </a>
+    <a href="index.html"><img class="img1" style=" margin-top:8px"src="msg.jpg" alt="Notification"> </a>              
+    <img class ="img2"src="profile1.jpg" alt="linkdine">
+<h3 >Try Premium Free<br> for 1 Month</h3>
+</div>
 
-            <div class="text">
-                <div class="content-heading">
-                    <p>Largest Oil Rig Manufacture and  <br> Transport</p>
-                </div>
 
-                <div class="page-name">
-                    <p>Transport <i class="fa-solid fa-circle-check "></i></p>
-                </div>
-                <div class="video-history">
-                    <p>1.9M views &#x2022 1 month ago</p>
-                </div>
-            </div>
 
-        </div>
-
-        <div class="Box-1">
-
-            <div class="master-img-container">
-                <div class="img-container">
-                    <img class="master-img"  src="./Images/img3.webp" alt="image-3">
-                </div>
-                <div class="bottom-right">
-                    10:34
-                </div>
-            </div>
-
-            <div class="logo-container">
-                <img class="logo-img" src="./Images/logo3.jpg" alt="Logo-3">
-            </div>
-
-            <div class="text">
-                <div class="content-heading">
-                    <p>FINALLY HAPPENED! NASA Captures  <br> First SOUND of BLACKHOLE</p>
-                </div>
-
-                <div class="page-name">
-                    <p>GetsetflySCIENCE <i class="fa-solid fa-circle-check "></i></p>
-                </div>
-                <div class="video-history">
-                    <p>433K views &#x2022 2 years ago</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="Box-1">
-            <div class="master-img-container">
-            <div class="img-container">
-                <img class="master-img"  src="./Images/img5..webp" alt="image-5">
-            </div>
-            <div class="bottom-right">
-                19:15
-            </div>
-            </div>
-
-            <div class="logo-container">
-                <img class="logo-img" src="./Images/logo5.jpg" alt="Logo-5">
-            </div>
-
-            <div class="text">
-                <div class="content-heading">
-                    <p>FULL FILM: McLaren Speedtail vs  <br>F35 Fighter Jet | Top Gear</p>
-                </div>
-
-                <div class="page-name">
-                    <p>TopGear <i class="fa-solid fa-circle-check "></i></p>
-                </div>
-                <div class="video-history">
-                    <p>27M  views &#x2022 3 years ago</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="Box-1">
-            <div class="master-img-container">
-            <div class="img-container">
-                <img class="master-img"  src="./Images/img4.webp" alt="image-4">
-            </div>
-            <div class="bottom-right">
-                20:17
-            </div>
-            </div>
-
-            <div class="logo-container">
-                <img class="logo-img" src="./Images/logo4.jpg" alt="Logo-4">
-            </div>
-
-            <div class="text">
-                <div class="content-heading">
-                    <p>Smooth Scroll and Nav menu in <br> HTML CSS JS only</p>
-                </div>
-
-                <div class="page-name">
-                    <p>Online web ustaad <i class="fa-solid fa-circle-check "></i></p>
-                </div>
-                <div class="video-history">
-                    <p>1.2K views &#x2022 4 days ago</p>
-                </div>
-            </div>
-
-        </div>
-        
-        <div class="Box-1">
-            <div class="master-img-container">
-            <div class="img-container">
-                <img class="master-img"  src="./Images/img6.webp" alt="image-6">
-            </div>
-            <div class="bottom-right">
-                22:00
-            </div>
-            </div>
-
-            <div class="logo-container">
-                <img class="logo-img" src="./Images/logo6.jpg" alt="Logo-6">
-            </div>
-
-            <div class="text">
-                <div class="content-heading">
-                    <p>Web/App | Complete HTML in One <br> Video |  HTML Crash Course</p>
-                </div>
-
-                <div class="page-name">
-                    <p>SuffahComputer <i class="fa-solid fa-circle-check "></i></p>
-                </div>
-                <div class="video-history">
-                    <p>374 views &#x2022 6 months ago</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="Box-1">
-            <div class="master-img-container">
-            <div class="img-container">
-                <img class="master-img"  src="./Images/img7.webp" alt="image-7">
-            </div>
-            <div class="bottom-right">
-                30:35
-            </div>
-            </div>
-
-            <div class="logo-container">
-                <img class="logo-img" src="./Images/logo1.jpg" alt="Logo-7">
-            </div>
-
-            <div class="text">
-                <div class="content-heading">
-                    <p>Reason Why People Fail <br> Learning To Code!</p>
-                </div>
-
-                <div class="page-name">
-                    <p>CodeWithHarry <i class="fa-solid fa-circle-check "></i></p>
-                </div>
-                <div class="video-history">
-                    <p>433K views &#x2022 1 years ago</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="Box-1">
-            <div class="master-img-container">
-            <div class="img-container">
-                <img class="master-img"  src="./Images/img8.webp" alt="image-8">
-            </div>
-            <div class="bottom-right">
-                16:17
-            </div>
-            </div>
-
-            <div class="logo-container">
-                <img class="logo-img" src="./Images/logo8.jpg" alt="Logo-8">
-            </div>
-
-            <div class="text">
-                <div class="content-heading">
-                    <p>My Dream Project is Finally Here <br> ! *Layers.shop*</p>
-                </div>
-
-                <div class="page-name">
-                    <p>Tech Burner <i class="fa-solid fa-circle-check "></i></p>
-                </div>
-                <div class="video-history">
-                    <p>433K views &#x2022 23 hours ago</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="Box-1">
-            <div class="master-img-container">
-            <div class="img-container">
-                <img class="master-img"  src="./Images/img9.webp" alt="image-9">
-            </div>
-            <div class="bottom-right">
-                16:17
-            </div>
-            </div>
-
-            <div class="logo-container">
-                <img class="logo-img" src="./Images/logo9.jpg" alt="Logo-9">
-            </div>
-
-            <div class="text">
-                <div class="content-heading">
-                    <p>CSS Tutorial: Media Queries Explained <br>| Web Development Tutorials #30</p>
-                </div>
-
-                <div class="page-name">
-                    <p>NewAmericaCO <i class="fa-solid fa-circle-check "></i></p>
-                </div>
-                <div class="video-history">
-                    <p>433K views &#x2022 2 years ago</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="Box-1">
-            <div class="master-img-container">
-            <div class="img-container">
-                <img class="master-img"  src="./Images/img10.webp" alt="image-10">
-            </div>
-            <div class="bottom-right">
-                16:20
-            </div>
-            </div>
-
-            <div class="logo-container">
-                <img class="logo-img" src="./Images/logo10.jpg" alt="Logo-10">
-            </div>
-
-            <div class="text">
-                <div class="content-heading">
-                    <p>CSS Tutorial: Media Queries Explained <br>| Web Development Tutorials #30</p>
-                </div>
-
-                <div class="page-name">
-                    <p>Ismal Kaleem <i class="fa-solid fa-circle-check "></i></p>
-                </div>
-                <div class="video-history">
-                    <p>432K views &#x2022 2 years ago</p>
-                </div>
-            </div>
-
-        </div>
+<div class="row">
+  <div class="column1" style="background-color:#aaa;">
+    
+    <a href="index.html"><img class="img5" src="profile1.jpg" alt="Photo"></a>
+    <h2 style="margin-left:60px;" >Shyam Khan </h2>
+<hr style="margin-top: 100px;">
+  </div>
+  <div class="column2" style="background-color:#bbb;">
+  	<H2><center>Start a New post</center></H2>
+  <hr style="margin-top: 40px;">
+    <a href="index.html"><img class="img3" src="cam.jpg" alt="Photo"></a>
+	<a href="index.html"><img class="img3" src="vdo.jpg" alt="Video"></a>
+    <a href="index.html"><img class="img3" src="doc.jpg" alt="Document"></a>
+    <a href="index.html"><img class="img3" src="article.jpg" alt="Article"> </a>
    
-        <div class="Box-1">
+  </div>
+  <div class="column3" style="background-color:#ccc;">
+    <h2>Recent Updates</h2>
+    <hr style ="margin-top: 60px">
+  </div>
+  <div class="column4" style="background-color:#ccc;">
+   <p> <a href="index.html"><img class="img4"  src="profile1.jpg" alt="Photo"> </a>
+    <hr tyle="margin-top:10px;">
+    <h2 style="margin-left:30px; margin-top:20px;">Shyam Khan
+    Software Engineer</h2>
+    <br>
+    <hr Style="margin-top:40px;">
 
-            <div class="master-img-container">
-                <div class="img-container">
-                    <img class="master-img"  src="./Images/img3.webp" alt="image-3">
-                </div>
-                <div class="bottom-right">
-                    10:34
-                </div>
-            </div>
-
-            <div class="logo-container">
-                <img class="logo-img" src="./Images/logo3.jpg" alt="Logo-3">
-            </div>
-
-            <div class="text">
-                <div class="content-heading">
-                    <p>FINALLY HAPPENED! NASA Captures  <br> First SOUND of BLACKHOLE</p>
-                </div>
-
-                <div class="page-name">
-                    <p>GetsetflySCIENCE <i class="fa-solid fa-circle-check "></i></p>
-                </div>
-                <div class="video-history">
-                    <p>433K views &#x2022 2 years ago</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="Box-1">
-            <div class="master-img-container">
-            <div class="img-container">
-                <img class="master-img"  src="./Images/img6.webp" alt="image-6">
-            </div>
-            <div class="bottom-right">
-                22:00
-            </div>
-            </div>
-
-            <div class="logo-container">
-                <img class="logo-img" src="./Images/logo6.jpg" alt="Logo-6">
-            </div>
-
-            <div class="text">
-                <div class="content-heading">
-                    <p>Web/App | Complete HTML in One <br> Video |  HTML Crash Course</p>
-                </div>
-
-                <div class="page-name">
-                    <p>SuffahComputer <i class="fa-solid fa-circle-check "></i></p>
-                </div>
-                <div class="video-history">
-                    <p>374 views &#x2022 6 months ago</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="Box-1">
-            <div class="master-img-container">
-            <div class="img-container">
-                <img class="master-img"  src="./Images/image2.webp" alt="image-2">
-            </div>
-            <div class="bottom-right">
-                16:20   
-            </div>
-            </div>
-
-            <div class="logo-container">
-                <img class="logo-img" src="./Images/logo2.jpg" alt="Logo-2">
-            </div>
-
-            <div class="text">
-                <div class="content-heading">
-                    <p>Largest Oil Rig Manufacture and  <br> Transport</p>
-                </div>
-
-                <div class="page-name">
-                    <p>Transport <i class="fa-solid fa-circle-check "></i></p>
-                </div>
-                <div class="video-history">
-                    <p>1.9M views &#x2022 1 month ago</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="Box-1">
-            <div class="master-img-container">
-            <div class="img-container">
-                <img class="master-img"  src="./Images/img7.webp" alt="image-7">
-            </div>
-            <div class="bottom-right">
-                30:35
-            </div>
-            </div>
-
-            <div class="logo-container">
-                <img class="logo-img" src="./Images/logo1.jpg" alt="Logo-7">
-            </div>
-
-            <div class="text">
-                <div class="content-heading">
-                    <p>Reason Why People Fail <br> Learning To Code!</p>
-                </div>
-
-                <div class="page-name">
-                    <p>CodeWithHarry <i class="fa-solid fa-circle-check "></i></p>
-                </div>
-                <div class="video-history">
-                    <p>433K views &#x2022 1 years ago</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="Box-1">
-            <div class="master-img-container">
-            <div class="img-container">
-                <img class="master-img"  src="./Images/img8.webp" alt="image-8">
-            </div>
-            <div class="bottom-right">
-                16:17
-            </div>
-            </div>
-
-            <div class="logo-container">
-                <img class="logo-img" src="./Images/logo8.jpg" alt="Logo-8">
-            </div>
-
-            <div class="text">
-                <div class="content-heading">
-                    <p>My Dream Project is Finally Here <br> ! *Layers.shop*</p>
-                </div>
-
-                <div class="page-name">
-                    <p>Tech Burner <i class="fa-solid fa-circle-check "></i></p>
-                </div>
-                <div class="video-history">
-                    <p>433K views &#x2022 23 hours ago</p>
-                </div>
-            </div>
-
-        </div>
-
-
-    </div>
-
+    <br>
+    <p>      Have many industries have been hit hard by COVID-19, Some are on the rise. Here are ten roles that are in demand today.</p><br>
+    <img class="img6"src="cam.jpg" alt="Post">
+    
+  </div>
+</div>
 
 </body>
-
 </html>
